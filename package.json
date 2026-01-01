@@ -1,11 +1,11 @@
 {
-  "name": "specialist-service",
+  "name": "business-card-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://VitekVP.github.io/specialist-service",
+  "homepage": "https://VitekVP.github.io/business-card-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /specialist-service/"
+    "build": "parcel build src/*.html --public-url /business-card-project/"
   },
   "repository": {
     "type": "git",

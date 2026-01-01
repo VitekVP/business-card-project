@@ -1,3 +1,35 @@
-<header>
-  <div class="container"></div>
+<header class="header">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="logo">
+        <img src="./images/222.svg" alt="logo" />
+      </div>
+      <nav>
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use href="./images/sprite.svg#icon-menu" class="icon-menu"></use>
+            <use href="./images/sprite.svg#icon-cross" class="icon-cross"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container">
+          <ul class="nav-list">
+            <li><a href="" class="nav-link">обо мне</a></li>
+            <li><a href="" class="nav-link">консультации</a></li>
+            <li><a href="" class="nav-link">вопросы</a></li>
+            <li><a href="" class="nav-link">статьи</a></li>
+            <li><a href="" class="nav-link">контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
 </header>

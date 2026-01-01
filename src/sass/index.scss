@@ -1,7 +1,15 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+@import './base/variables';
+@import './base/reset';
+@import './base/fonts';
 @import './base/common';
-@import './base/reset.scss';
-@import './base/variebles.scss';
 
-@import './components/container.scss';
+@import './components/container';
+
+@import './components/header';
+@import './components/burger-menu';
+@import './components/hero';
+@import './components/about';
+@import './components/products';
+@import './components/footer';

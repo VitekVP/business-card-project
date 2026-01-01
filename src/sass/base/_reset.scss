@@ -10,9 +10,8 @@ p {
 }
 a {
   text-decoration: none;
-  //   color: currentColor;
   color: inherit;
-  //   cursor: pointer;
+  cursor: pointer;
 }
 ul {
   list-style: none;
@@ -25,7 +24,8 @@ img {
   height: auto;
 }
 button {
-  //   color: inherit;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
 }
 
