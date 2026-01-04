@@ -7,12 +7,40 @@ body {
   font-size: $font-size-secondary;
   font-weight: $regular;
   line-height: $primary;
-  color: $primary-text-color;
+  color: $primary-color;
 
   // overflow-x: hidden;
 
-  @media screen and (min-width: $tablet) {
-    font-size: $font-size-primary;
-    font-weight: $medium;
+  background-color: $tertiary-color;
+  background-position: center;
+  background-attachment: fixed;
+
+  background-image: url(../images/bg/img_s@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg/img_s@2x.jpg);
+  }
+  // Tablet screen
+  @media screen and (min-width: 577px) {
+    background-image: url(../images/bg/img_m@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/img_m@2x.jpg);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/bg/img_l@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/img_l@2x.jpg);
+    }
   }
 }
