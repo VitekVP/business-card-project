@@ -1,4 +1,4 @@
-.burger__container {
+.burger-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,13 +13,23 @@
   transform: translateX(-100%);
 
   transition: transform $time-transition;
+
+  overflow-y: scroll;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
-.burger__logo {
+.burger-container.is-open {
+  transform: translateX(0);
+}
+
+.burger-logo {
   margin-left: 40px;
 }
 
-.burger__btn {
+.burger-btn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -35,11 +45,11 @@
   color: $primary-color;
 }
 
-.burger__icon {
+.burger-icon {
   fill: currentColor;
 }
 
-.burger__list {
+.burger-list {
   display: flex;
   gap: 40px;
   flex-direction: column;
@@ -47,7 +57,7 @@
   padding: 50px 0;
 }
 
-.burger__list-item {
+.burger-list-item {
   font-size: $font-size-fifth;
   font-weight: $bold;
   line-height: $thirdery;

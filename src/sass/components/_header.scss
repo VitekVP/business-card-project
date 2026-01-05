@@ -2,7 +2,7 @@
   background-color: $secondary-color;
 }
 
-.header__wrapper {
+.header-wrapper {
   padding: 5px 20px;
 
   display: flex;
@@ -18,7 +18,7 @@
   }
 }
 
-.header__logo {
+.header-logo {
   width: 60px;
   height: 60px;
 }
@@ -37,7 +37,7 @@
   }
 }
 
-.nav__item {
+.nav-item {
   padding: 15px 0;
 
   font-size: $font-size-seventh;
@@ -51,7 +51,7 @@
   }
 }
 
-.header__menu {
+.header-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,6 +68,6 @@
   }
 }
 
-.header__icon {
+.header-icon {
   fill: $primary-color;
 }
