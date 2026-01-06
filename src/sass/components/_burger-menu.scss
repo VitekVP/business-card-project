@@ -47,6 +47,12 @@
 
 .burger-icon {
   fill: currentColor;
+
+  transition: fill $time-transition;
+
+  &:active {
+    fill: $accent-primary-color;
+  }
 }
 
 .burger-list {
@@ -57,8 +63,14 @@
   padding: 50px 0;
 }
 
-.burger-list-item {
+.burger-list-link {
   font-size: $font-size-fifth;
   font-weight: $bold;
   line-height: $thirdery;
+
+  transition: color $time-transition;
+
+  &:active {
+    color: $accent-primary-color;
+  }
 }
