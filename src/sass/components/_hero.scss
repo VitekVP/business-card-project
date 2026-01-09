@@ -46,7 +46,7 @@
     padding: 160px 0;
     max-width: 1600px;
     min-height: none;
-    height: 600px;
+    height: 700px;
   }
 }
 
@@ -67,7 +67,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding-left: 480px;
+    padding-left: 520px;
     font-size: $font-size-eighth;
     line-height: $thirdery;
   }
@@ -77,12 +77,19 @@
   display: block;
 }
 
+.hero-title-one {
+  animation: top-to-bottom 1000ms ease-in 1200ms both;
+}
+
 .hero-title-two {
   margin-top: 20px;
   margin-left: 40px;
+
+  animation: bottom-to-top 1000ms ease-in 2000ms both;
 }
 
 .hero-btn {
+  position: relative;
   display: block;
   width: 160px;
   height: 52px;
@@ -94,6 +101,8 @@
   font-size: $font-size-primary;
   font-weight: $medium;
   color: $primary-color;
+
+  overflow: hidden;
 
   transition: background-color $time-transition, color $time-transition,
     transform $time-transition;
@@ -112,5 +121,25 @@
 
   @media screen and (min-width: $desktop) {
     width: 220px;
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+
+    background: linear-gradient(
+      to left,
+      transparent 0%,
+      #fff 40%,
+      #fff 60%,
+      transparent 100%
+    );
+    // transform: translate(-100%, -25%) rotate(-25deg);
+    animation: blick 7s infinite;
   }
 }
