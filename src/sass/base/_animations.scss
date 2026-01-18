@@ -43,3 +43,21 @@
     transform: translate(110%, -50%) rotate(40deg);
   }
 }
+
+@keyframes appearance {
+  0% {
+    transform: translateY(-10%) rotateY(10deg);
+    opasity: 0;
+  }
+  40% {
+    transform: translateY(-5%) rotateY(5deg);
+    opacity: 0.5;
+  }
+  80% {
+    transform: translateY(0%) rotateY(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
