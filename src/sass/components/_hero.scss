@@ -63,8 +63,9 @@
 
   text-align: left;
 
+  font-family: 'Caveat', cursive;
   font-size: $font-size-thirdery;
-  font-weight: $black;
+  font-weight: 600;
   line-height: $secondary;
 
   text-transform: uppercase;
@@ -97,61 +98,9 @@
 }
 
 .hero-btn {
-  position: relative;
-  display: block;
-  width: 160px;
-  height: 52px;
+  @extend %btn-base;
+  @include btn-size;
+  @include btn-style($btn-color, $primary-color, $btn-color-accent);
+
   margin: 50px auto 0;
-
-  border-radius: 12px;
-  background-color: $btn-color;
-
-  font-size: $font-size-primary;
-  font-weight: $medium;
-  color: $primary-color;
-
-  overflow: hidden;
-
-  transition:
-    background-color $time-transition,
-    // color $time-transition,
-    border-radius $time-transition,
-    transform $time-transition;
-
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: $btn-color-accent;
-    // color: $accent-primary-color;
-    border-radius: 45px;
-    transform: scale(1.1);
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 180px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 220px;
-  }
-
-  &::before {
-    content: '';
-    width: 100%;
-    height: 200%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-
-    background: linear-gradient(
-      to left,
-      transparent 0%,
-      #fff 40%,
-      #fff 60%,
-      transparent 100%
-    );
-    // transform: translate(-100%, -25%) rotate(-25deg);
-    animation: blick 7s infinite;
-  }
 }

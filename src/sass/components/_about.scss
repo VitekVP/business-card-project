@@ -5,22 +5,8 @@
 }
 
 .about-title {
-  font-size: $font-size-eighth;
-  font-weight: $medium;
-  line-height: $secondary;
-
-  text-align: center;
-
-  // animation: appearance 1000ms ease-in 1200ms both;
-
-  @media screen and (min-width: $tablet) {
-    font-weight: $bold;
-  }
-
-  @media screen and (min-width: $desktop) {
-    font-weight: $black;
-    line-height: $thirdery;
-  }
+  @extend %section-title;
+  @include section-title;
 }
 
 .about-box {
