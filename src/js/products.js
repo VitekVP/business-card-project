@@ -9,5 +9,5 @@ const markupSetProduct = productsArray
   })
   .join('');
 
-console.log(markupSetProduct);
+// console.log(markupSetProduct);
 productsListEl.innerHTML = markupSetProduct;

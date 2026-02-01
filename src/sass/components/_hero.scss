@@ -87,14 +87,14 @@
 }
 
 .hero-title-one {
-  animation: top-to-bottom 1000ms ease-in 1200ms both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .hero-title-two {
   margin-top: 20px;
   margin-left: 40px;
 
-  animation: bottom-to-top 1000ms ease-in 2000ms both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .hero-btn {
@@ -103,4 +103,6 @@
   @include btn-style($btn-color, $primary-color, $btn-color-accent);
 
   margin: 50px auto 0;
+
+  animation: roll-in-blurred-bottom 0.8s cubic-bezier(0.23, 1, 0.32, 1) 2s both;
 }
