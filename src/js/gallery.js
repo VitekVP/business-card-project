@@ -16,8 +16,8 @@ galleryListEl.innerHTML = markupSetGallery;
 
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
-  direction: 'horizontal',
   loop: true,
+  speed: 1000,
 
   pagination: {
     el: '.swiper-pagination',

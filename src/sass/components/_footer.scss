@@ -1,0 +1,164 @@
+.footer {
+  @include section-padding;
+
+  background-color: $secondary-color;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+
+  transition: transform $time-transition;
+
+  @media screen and (min-width: $tablet) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 120px;
+    height: 120px;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.footer-address {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  font-size: $font-size-seventh;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $font-size-thirdery;
+    font-weight: $medium;
+  }
+}
+
+.footer-address-icon {
+  fill: $primary-color;
+
+  @media screen and (min-width: $desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.footer-address p {
+  text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: $font-size-seventh;
+
+  transition: all $time-transition;
+
+  &:active,
+  &:focus,
+  &:hover {
+    .footer-info-icon {
+      fill: $accent-primary-color;
+      transform: scale(1.1);
+    }
+    .footer-info-text {
+      text-decoration: underline;
+      color: $accent-primary-color;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.footer-info-text {
+  transition: all $time-transition;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $font-size-sixth;
+    font-weight: $medium;
+  }
+}
+
+.footer-info-icon {
+  fill: $primary-color;
+
+  transition: all $time-transition;
+
+  @media screen and (min-width: $desktop) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.footer-messengers {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-messenger-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-color: $primary-color;
+
+  &:active,
+  &:focus,
+  &:hover {
+    .footer-messenger-icon {
+      fill: $accent-primary-color;
+    }
+  }
+}
+
+.footer-messenger-icon {
+  fill: $secondary-color;
+
+  transition: all $time-transition;
+}
+
+.footer-line {
+  margin-top: 50px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $primary-color;
+}
+
+.footer-upper-text {
+  margin-top: 8px;
+
+  text-align: center;
+
+  color: $fourth-color;
+}

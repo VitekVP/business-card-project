@@ -1,3 +1,132 @@
-<footer>
-  <!-- <div class="container"></div> -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          type="png"
+          srcset="
+            ./images/logo/logo_l@1x.png 1x,
+            ./images/logo/logo_l@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          type="png"
+          srcset="
+            ./images/logo/logo_m@1x.png 1x,
+            ./images/logo/logo_m@2x.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767.98px)"
+          type="png"
+          srcset="
+            ./images/logo/logo_s@1x.png 1x,
+            ./images/logo/logo_s@2x.png 2x
+          "
+        />
+        <img
+          class="footer-logo"
+          src="./images/logo/logo_s@1x.png"
+          alt="Logo"
+          width="40"
+          height="40"
+          loading="lazy"
+        />
+      </picture>
+      <address class="footer-address">
+        <svg class="footer-address-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-locate"></use>
+        </svg>
+        <p>
+          62162 Харківська область<br />Богодухівський район<br />село
+          Сазоно-Баланівка
+          <br />
+          вулиця Центральна, 75
+        </p>
+      </address>
+      <ul class="footer-info">
+        <li class="footer-info-item">
+          <svg
+            class="footer-info-icon"
+            width="24"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+          <p class="footer-info-text">+38(05758)-3-48-63</p>
+        </li>
+        <li class="footer-info-item">
+          <svg
+            class="footer-info-icon"
+            width="24"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+          <p class="footer-info-text">+38(067)-577-62-68</p>
+        </li>
+        <li class="footer-info-item">
+          <svg
+            class="footer-info-icon"
+            width="24"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="./images/icons.svg#icon-mail"></use>
+          </svg>
+          <p class="footer-info-text">tov-dobrosmak75@ukr.net</p>
+        </li>
+        <ul class="footer-messengers" aria-label="Доступні мессенджери">
+          <li class="footer-messenger-item" title="Viber">
+            <svg
+              class="footer-messenger-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="./images/icons.svg#icon-viber"></use>
+            </svg>
+          </li>
+          <li class="footer-messenger-item" title="Telegram">
+            <svg
+              class="footer-messenger-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </li>
+          <li class="footer-messenger-item" title="Whatsapp">
+            <svg
+              class="footer-messenger-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="./images/icons.svg#icon-whatsapp"></use>
+            </svg>
+          </li>
+          <li class="footer-messenger-item" title="Mail">
+            <svg
+              class="footer-messenger-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="footer-line"></div>
+    <p class="footer-upper-text">
+      ТОВ ДОБРОСМАК &#8482; &#169; 2007-2026. Всі права захищені
+    </p>
+  </div>
 </footer>
