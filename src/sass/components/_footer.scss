@@ -162,3 +162,13 @@
 
   color: $fourth-color;
 }
+
+// .hero-btn {
+//   @extend %btn-base;
+//   @include btn-size;
+//   @include btn-style($btn-color, $primary-color, $btn-color-accent);
+
+//   margin: 50px auto 0;
+
+//   animation: roll-in-blurred-bottom 0.8s cubic-bezier(0.23, 1, 0.32, 1) 2s both;
+// }

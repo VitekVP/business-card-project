@@ -3,18 +3,18 @@
 }
 
 .header-wrapper {
-  padding: 5px 20px;
+  padding: 0 20px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (min-width: $tablet) {
-    padding: 10px 40px;
+    padding: 0 40px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 10px 60px;
+    padding: 0 60px;
   }
 }
 
@@ -56,7 +56,7 @@
 
 .nav-link {
   position: relative;
-  padding: 15px 0;
+  padding: 25px 0;
 
   font-size: $font-size-seventh;
   font-weight: $medium;
@@ -68,7 +68,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 20px 0;
+    padding: 35px 0;
 
     font-size: $font-size-sixth;
     font-weight: $bold;

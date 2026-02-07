@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: 'Caveat';
-  src: url('../fonts/Caveat-Regular.ttf') format('ttf');
+  src: url('../fonts/Caveat-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: 'Caveat';
-  src: url('../fonts/Caveat-Medium.ttf') format('ttf');
+  src: url('../fonts/Caveat-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: 'Caveat';
-  src: url('../fonts/Caveat-SemiBold.ttf') format('ttf');
+  src: url('../fonts/Caveat-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -64,16 +64,16 @@
 
 @font-face {
   font-family: 'Caveat';
-  src: url('../fonts/Caveat-Bold.ttf') format('ttf');
+  src: url('../fonts/Caveat-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Great Vibes';
-  src: url('../fonts/GreatVibes-Regular.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'GreatVibe';
+//   src: url('../fonts/GreatVibes-Regular.woff2') format('woff2');
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }

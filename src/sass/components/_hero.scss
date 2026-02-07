@@ -1,9 +1,10 @@
 .hero {
   @include section-padding;
 
+  position: relative;
+
   max-width: $mobile;
-  min-height: 400px;
-  // padding: 100px 0;
+  min-height: 480px;
   margin: 0 auto;
 
   background-color: $tertiary-color;
@@ -47,62 +48,58 @@
 
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
-    // padding: 120px 0;
+    min-height: 580px;
   }
 
   @media screen and (min-width: $desktop) {
-    // padding: 140px 0;
     max-width: 1600px;
     min-height: 700px;
-    // height: 700px;
   }
 }
 
 .hero-title {
-  padding-left: 100px;
-
-  text-align: left;
+  position: absolute;
+  top: 140px;
+  left: 20%;
 
   font-family: 'Caveat', cursive;
-  font-size: $font-size-thirdery;
-  font-weight: 600;
+  font-size: $font-size-fifth;
+  font-weight: $medium;
   line-height: $secondary;
-
-  text-transform: uppercase;
+  font-style: italic;
 
   @media screen and (min-width: $tablet) {
-    padding-left: 260px;
-    font-size: $font-size-fourth;
+    top: 180px;
+    left: 40%;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-left: 520px;
+    top: 200px;
+
     font-size: $font-size-eighth;
     line-height: $thirdery;
   }
 }
 
-.hero-title > span {
+.hero-title-line {
   display: block;
 }
 
-.hero-title-one {
+.hero-title-line-first {
   animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.hero-title-two {
+.hero-title-line-second {
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 30px;
 
-  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
 }
 
-.hero-btn {
-  @extend %btn-base;
-  @include btn-size;
-  @include btn-style($btn-color, $primary-color, $btn-color-accent);
+.hero-title-accent {
+  font-weight: $bold;
+  text-transform: uppercase;
 
-  margin: 50px auto 0;
-
-  animation: roll-in-blurred-bottom 0.8s cubic-bezier(0.23, 1, 0.32, 1) 2s both;
+  color: $tertiary-color;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
