@@ -62,21 +62,23 @@
   top: 140px;
   left: 20%;
 
-  font-family: 'Caveat', cursive;
-  font-size: $font-size-fifth;
-  font-weight: $medium;
+  font-family: 'Caveat', cursive, sans-serif;
+  font-size: $font-size-eighth;
+  font-weight: $bold;
   line-height: $secondary;
-  font-style: italic;
+  letter-spacing: 3;
 
   @media screen and (min-width: $tablet) {
     top: 180px;
-    left: 40%;
+    left: 30%;
   }
 
   @media screen and (min-width: $desktop) {
     top: 200px;
+    left: 40%;
 
-    font-size: $font-size-eighth;
+    font-size: 66px;
+    letter-spacing: 5;
     line-height: $thirdery;
   }
 }
