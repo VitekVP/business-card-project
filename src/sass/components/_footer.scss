@@ -12,7 +12,14 @@
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: space-between;
+    gap: 50px;
   }
 }
 
@@ -76,7 +83,7 @@
   transition: all $time-transition;
 
   @media screen and (min-width: $desktop) {
-    font-size: $font-size-sixth;
+    font-size: $font-size-thirdery;
     font-weight: $medium;
   }
 }
@@ -92,8 +99,27 @@
   }
 }
 
+.footer-box {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.footer-btn {
+  @extend %btn-base;
+  @include btn-size;
+  @include btn-style($primary-color, $secondary-color, $accent-primary-color);
+
+  width: 260px;
+  gap: 8px;
+}
+
+.footer-btn-icon {
+  fill: currentColor;
+}
+
 .footer-messengers {
-  padding-top: 20px;
   display: flex;
   justify-content: space-around;
 }
@@ -139,16 +165,4 @@
   text-align: center;
 
   color: $fourth-color;
-}
-
-.footer-btn {
-  @extend %btn-base;
-  @include btn-size;
-  @include btn-style($primary-color, $secondary-color, $accent-primary-color);
-
-  gap: 8px;
-}
-
-.footer-btn-icon {
-  fill: currentColor;
 }
