@@ -4,28 +4,6 @@
   background-color: $secondary-color;
 }
 
-.footer-logo {
-  width: 80px;
-  height: 80px;
-
-  transition: transform $time-transition;
-
-  @media screen and (min-width: $tablet) {
-    width: 100px;
-    height: 100px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 120px;
-    height: 120px;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.2);
-    }
-  }
-}
-
 .footer-wrapper {
   display: flex;
   flex-direction: column;
@@ -163,12 +141,14 @@
   color: $fourth-color;
 }
 
-// .hero-btn {
-//   @extend %btn-base;
-//   @include btn-size;
-//   @include btn-style($btn-color, $primary-color, $btn-color-accent);
+.footer-btn {
+  @extend %btn-base;
+  @include btn-size;
+  @include btn-style($primary-color, $secondary-color, $accent-primary-color);
 
-//   margin: 50px auto 0;
+  gap: 8px;
+}
 
-//   animation: roll-in-blurred-bottom 0.8s cubic-bezier(0.23, 1, 0.32, 1) 2s both;
-// }
+.footer-btn-icon {
+  fill: currentColor;
+}
