@@ -5,6 +5,8 @@
 .products-title {
   @extend %section-title;
   @include section-title;
+
+  text-shadow: none;
 }
 
 .green-title {
