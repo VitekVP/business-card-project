@@ -1,7 +1,7 @@
 import { productsArray } from './products/products-array';
 import { markupCardProduct } from './products/card-product';
 
-const productsListEl = document.querySelector('.products-list-js');
+const productsListEl = document.querySelector('.js-products-list');
 
 const markupSetProduct = productsArray
   .map(el => {
@@ -9,5 +9,4 @@ const markupSetProduct = productsArray
   })
   .join('');
 
-// console.log(markupSetProduct);
 productsListEl.innerHTML = markupSetProduct;

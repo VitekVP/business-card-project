@@ -1,4 +1,4 @@
-export const markupCardProduct = ({ title, img, img2, text }) =>
+export const markupCardProduct = ({ category, title, img, img2, text }) =>
   `<li class="products-list-item">
     <div class="products-card">
       <div class="products-img">
@@ -13,7 +13,7 @@ export const markupCardProduct = ({ title, img, img2, text }) =>
       <div class="products-info">
         <h3 class="products-name">${title}</h3>
         <p class="products-text">${text}</p>
-        <button class="products-btn" type="button">асортимент</button>
+        <button class="products-btn js-open-modal" data-category="${category}" type="button">асортимент</button>
       </div>
     </div>
   </li>`;

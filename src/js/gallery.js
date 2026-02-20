@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
-const galleryListEl = document.querySelector('.gallery-list-js');
+const galleryListEl = document.querySelector('.js-gallery-list');
 
 const markupSetGallery = galleryImgArray
   .map(el => {
