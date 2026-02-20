@@ -100,15 +100,12 @@
   background: transparent;
   color: $btn-color;
 
-  transition:
-    color $time-transition,
-    border $time-transition;
+  transition: color $time-transition;
 
   &:active,
   &:focus,
   &:hover {
     color: $accent-primary-color;
-    border: 1px solid $accent-primary-color;
   }
 }
 
