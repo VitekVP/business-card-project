@@ -98,6 +98,8 @@
   @include btn-size;
   @include btn-style($primary-color, $secondary-color, $accent-primary-color);
 
+  font-size: $font-size-seventh;
+
   margin-top: auto;
 }
 
@@ -110,10 +112,9 @@
   width: 240px;
   height: 60px;
 
-  // display: flex;
   gap: 8px;
-  // align-items: center;
-  // justify-content: center;
+
+  font-size: $font-size-seventh;
 
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
