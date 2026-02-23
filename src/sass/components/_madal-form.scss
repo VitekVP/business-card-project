@@ -1,0 +1,172 @@
+.backdrop-form {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: rgb(85, 107, 47, 0.65);
+  backdrop-filter: blur(8px);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  overflow-y: auto;
+
+  transition:
+    opacity $time-transition,
+    visibility $time-transition;
+
+  &.show-modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.form-wrap {
+  padding: 30px 10px;
+  width: calc(100% - 80px * 2);
+  height: 680px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+
+  background: transparent;
+  border: 1px solid $accent-primary-color;
+  border-radius: 18px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%) scale(0.2);
+
+  transition:
+    transform $time-transition,
+    opacity $time-transition,
+    visibility $time-transition;
+
+  @media screen and (min-width: $mobile) {
+    width: 460px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 40px 20px;
+    width: 660px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 60px 40px;
+    width: 760px;
+    height: 740px;
+  }
+}
+
+.backdrop-form.show-modal .form-wrap {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.modal-form-close {
+  position: absolute;
+  z-index: 15;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  background: transparent;
+  color: $accent-primary-color;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $accent-primary-color;
+
+  transition:
+    color $time-transition,
+    border-color $time-transition;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.modal-form-icon {
+  fill: currentColor;
+}
+
+.form-title {
+  font-size: $font-size-fourth;
+  color: $accent-primary-color;
+
+  text-align: center;
+
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  width: 100%;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-size: $font-size-seventh;
+  color: $accent-primary-color;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 4px 6px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: $accent-primary-color;
+  border-radius: 8px;
+  background-color: transparent;
+
+  transition:
+    border-color $time-transition,
+    background-color $time-transition,
+    box-shadow $time-transition;
+}
+
+input:focus,
+textarea:focus {
+  border-color: $tertiary-color;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+  background-color: $tertiary-color;
+}
+
+.form-btn {
+  @extend %btn-base;
+  @include btn-size;
+  @include btn-style($accent-primary-color, $secondary-color, $primary-color);
+
+  margin: 0 auto;
+}
