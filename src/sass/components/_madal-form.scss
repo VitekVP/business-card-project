@@ -150,10 +150,18 @@ textarea {
   border-radius: 8px;
   background-color: transparent;
 
+  color: black;
+
   transition:
     border-color $time-transition,
     background-color $time-transition,
     box-shadow $time-transition;
+}
+
+input {
+  @media screen and (min-width: $desktop) {
+    height: 40px;
+  }
 }
 
 input:focus,
