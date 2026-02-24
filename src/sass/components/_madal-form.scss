@@ -171,6 +171,17 @@ textarea:focus {
   background-color: $tertiary-color;
 }
 
+input:hover,
+textarea:hover {
+  border-color: $tertiary-color;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  background-color: $tertiary-color;
+}
+
 .form-btn {
   @extend %btn-base;
   @include btn-size;
