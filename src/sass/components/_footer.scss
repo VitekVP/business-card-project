@@ -61,7 +61,11 @@
 
   font-size: $font-size-seventh;
 
-  transition: all $time-transition;
+  transition:
+    text-decoration $time-transition,
+    color $time-transition,
+    transform $time-transition,
+    fill $time-transition;
 
   &:active,
   &:focus,
