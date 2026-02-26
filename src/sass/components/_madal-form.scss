@@ -33,7 +33,7 @@
 
 .form-wrap {
   padding: 30px 10px;
-  width: calc(100% - 80px * 2);
+  width: calc(100% - 20px * 2);
   height: 680px;
 
   display: flex;
@@ -112,8 +112,9 @@
   left: 50%;
   transform: translate(-50%, -75%) scale(0.2);
 
-  width: 340px;
-  height: 120px;
+  max-width: 340px;
+  min-height: 120px;
+  padding: 10px 4px;
 
   border-width: 4px;
   border-style: solid;
@@ -131,6 +132,13 @@
     border-color $time-transition,
     color $time-transition,
     transform $time-transition;
+
+  @media screen and (min-width: $mobile) {
+    max-width: none;
+    min-height: none;
+    width: 340px;
+    height: 120px;
+  }
 
   &.success {
     color: $btn-color;
