@@ -92,19 +92,13 @@
   border-radius: 50%;
   background: transparent;
   color: $accent-primary-color;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $accent-primary-color;
 
-  transition:
-    color $time-transition,
-    border-color $time-transition;
+  transition: color $time-transition;
 
   &:active,
   &:focus,
   &:hover {
     color: $primary-color;
-    border-color: $primary-color;
   }
 }
 
