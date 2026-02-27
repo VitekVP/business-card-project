@@ -58,7 +58,8 @@
   transition:
     background-color $time-transition,
     border-radius $time-transition,
-    transform $time-transition;
+    transform $time-transition,
+    opaсity $time-transition;
 
   &:active,
   &:focus,

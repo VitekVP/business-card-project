@@ -192,6 +192,7 @@ textarea {
   border-color: $accent-primary-color;
   border-radius: 8px;
   background-color: transparent;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 
   color: $black-color;
 
@@ -210,18 +211,20 @@ input {
 input:focus,
 textarea:focus {
   border-color: $tertiary-color;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+  box-shadow:
+    13px 13px 100px #969696,
+    -13px -13px 100px #ffffff;
   background-color: $tertiary-color;
 }
 
 input:hover,
 textarea:hover {
   border-color: $tertiary-color;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
 }
 
 input:not(:placeholder-shown),
 textarea:not(:placeholder-shown) {
+  border-color: $tertiary-color;
   background-color: $tertiary-color;
 }
 
@@ -231,8 +234,6 @@ textarea:not(:placeholder-shown) {
   @include btn-style($accent-primary-color, $secondary-color, $primary-color);
 
   margin: 0 auto;
-
-  transition: opasity $time-transition;
 
   &:disabled {
     opacity: 0.85;
