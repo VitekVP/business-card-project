@@ -5,7 +5,8 @@
   "homepage": "https://VitekVP.github.io/business-card-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /business-card-project/"
+    "build": "parcel build src/*.html --public-url /business-card-project/",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,9 @@
     "swiper": "^12.1.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.3",
-    "parcel": "^2.16.3",
+    "@parcel/transformer-sass": "^2.6.0",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },

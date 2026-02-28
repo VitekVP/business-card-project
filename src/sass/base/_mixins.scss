@@ -1,7 +1,7 @@
 @mixin section-padding(
   $mobile-padding: 40px,
-  $tablet-padding: 100px,
-  $desctop-padding: 120px
+  $tablet-padding: 80px,
+  $desctop-padding: 100px
 ) {
   padding: $mobile-padding 0;
 
